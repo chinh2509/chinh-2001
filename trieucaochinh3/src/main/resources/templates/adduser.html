@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>List book</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--css-->
+    <link th:href="@{/css/bootstrap.css}" rel="stylesheet" />
+    <!--js-->
+    <script th:src="@{/js/min.js}"></script>
+
+</head>
+<body>
+<form method="post" th:action="@{/adduser}" th:object="${books}">
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" th:field="${books.name}">
+        <div id="emailHelp" class="form-text">We will never share your information with anyone else..</div>
+    </div>
+    <div class="mb-3">
+        <label for="nxb" class="form-label">Nhà xuấản bản</label>
+        <input type="text" class="form-control" id="nxb" th:field="${books.nxb}">
+    </div>
+    <div class="mb-3">
+        <label for="age" class="form-label">Ahthor</label>
+        <input type="text" class="form-control" id="age" th:field="${books.author}">
+    </div>
+    <div class="mb-3">
+        <label for="age" class="form-label">category</label>
+        <input type="text" class="form-control" id="category" th:field="${books.category}">
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">AddSubmit</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>List User</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--css-->
+    <link th:href="@{/css/bootstrap.css}" rel="stylesheet" />
+    <!--js-->
+    <script th:src="@{/js/min.js}"></script>
+
+</head>
+<body>
+<h1 th:text="${msg}"></h1>
+<a th:href="@{/adduser}" class="btn btn-primary">addbook</a>
+<a th:href="@{/listuser}" class="btn btn-primary">list</a>
+
+</body>
+</html>
