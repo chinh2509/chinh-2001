@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="demo-maven:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/demo_maven_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="demo-maven" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: opensymphony:sitemesh:2.4.2" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="demo-maven/web/Web" />
+    </root>
+  </artifact>
+</component>
